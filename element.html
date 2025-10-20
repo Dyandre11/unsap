@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Bahlil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --glass: rgba(255, 255, 255, 0.05);
+      --border: rgba(255, 255, 255, 0.2);
+      --neon: #8c52ff;
+      --text: #e0e0e0;
+      --accent: #00ffe1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      backdrop-filter: blur(25px);
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.05);
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--accent);
+      letter-spacing: 1px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 20px auto;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 20px var(--accent);
+      transition: transform 0.4s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+
+    section {
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: var(--neon);
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--accent);
+      margin-top: 8px;
+    }
+
+    p, li, td {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    blockquote {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 20px;
+      border-left: 4px solid var(--accent);
+      margin: 20px 0;
+      font-style: italic;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    th {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--accent);
+    }
+
+    ul, ol {
+      margin-left: 30px;
+    }
+
+    audio, iframe {
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 0 15px rgba(0,255,255,0.1);
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background-color: var(--neon);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: var(--accent);
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Portofolio Bahlil</h1>
+    <img class="profile-pic" src="download.jpg" alt="Foto Bahlil">
+
+    <section>
+      <h2>Tentang Saya</h2>
+      <p>Saya Bahlil, seorang web developer yang ceria.</p>
+      <blockquote>“Berpikir digital, bertindak nyata.”</blockquote>
+    </section>
+
+    <section>
+      <h2>Pengalaman Kerja</h2>
+      <table>
+        <tr>
+          <th>Posisi</th>
+          <th>Perusahaan</th>
+          <th>Tahun</th>
+        </tr>
+        <tr>
+          <td>Web Developer</td>
+          <td>PT. Teknologi</td>
+          <td>2020–2023</td>
+        </tr>
+        <tr>
+          <td>Junior Developer</td>
+          <td>PT. Inovasi</td>
+          <td>2018–2020</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Hobi</h2>
+      <ul>
+        <li>Desain UI/UX</li>
+        <li>Membaca Teknologi</li>
+        <li>Fotografi Street</li>
+      </ul>
+      <ol>
+        <li>Belajar Bahasa Jepang</li>
+        <li>Menulis Tutorial</li>
+        <li>Eksperimen AI</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Lagu Favorit</h2>
+      <audio controls>
+        <source src="lagu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutar audio.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Video Karya</h2>
+      <iframe src="https://www.youtube.com/embed/Cihuw1QWvwA" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>Ikuti Saya</h2>
+      <div class="social-links">
+        <a href="https://instagram.com/username" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2024 Bahlil Digital Portfolio. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
